@@ -1,0 +1,13 @@
+<div class="top-bar">
+  <div class="header">Posts</div>
+  <div class="selected-post" *ngIf="(selected$ | async) == 0; else selectePostBlock">
+    Click on a tile to select user post
+  </div>
+  <ng-template #selectePostBlock>Post {{ selected$ | async}} selected</ng-template>
+</div>
+<br>
+<div class="grid-container">
+  <div *ngFor="let post of postData$ | async" class="grid-item">
+    <app-post-details [data]="post" [selectedId]="selected$ | async"></app-post-details>
+  </div>
+</div>

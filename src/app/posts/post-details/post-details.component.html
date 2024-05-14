@@ -1,0 +1,8 @@
+<div class="flip-card">
+  <div #cardContainer class="flip-card-inner" (click)="togglePostDetail()">
+    <div class="flip-card-front small-desc">
+      <div class="property">{{ properties[currentIndex] }}</div>
+      <div class="content">{{ data[properties[currentIndex]] }}</div>
+    </div>
+  </div>
+</div>  
