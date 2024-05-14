@@ -29,6 +29,8 @@ The motivation behind this assignment is to demonstrate proficiency in Angular d
 4. Run the application using `ng serve`.
 5. Open your browser and navigate to `http://localhost:4200` to view the application.
 
+   ![Visualiser](/src/assets/UI.PNG?raw=true)
+
 ## Gotchas
 
 - Ensure you have Node.js and Angular CLI installed on your machine.
